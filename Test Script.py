@@ -87,7 +87,7 @@ class DatasetCreation(Dataset):
 # In[100]:
 
 
-model = torch.load('model_triplet_pr_po_max_pool_fix_weighted.pt').eval() # load the trained modelin evaluation mode
+model = torch.load('model_weight_file.pt').eval() # load the trained modelin evaluation mode
 test_folder = dataset.ImageFolder(test_dir)
 created_dataset = DatasetCreation(image_folder=test_folder, 
                                  transform=transforms.Compose([transforms.Resize((100, 100)), transforms.ToTensor()]), 
