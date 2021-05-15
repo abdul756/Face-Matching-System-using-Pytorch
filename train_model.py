@@ -201,7 +201,7 @@ for epoch in range(train_num_epochs):
             loss_history.append(contrastive_loss.item())
             counter.append(iteration)
     print("Saving model")
-    torch.save(model, 'model_triplet_pr_po_max_pool_fix_weighted.pt')
+    torch.save(model, 'model_weight_file.pt')
     print("-- Model Checkpoint saved ---")
 
             
